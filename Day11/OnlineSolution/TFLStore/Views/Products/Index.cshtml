@@ -1,0 +1,27 @@
+@using BOL;
+@{
+    ViewData["Title"] = "Products Page";
+}
+
+ 
+ <h3>List of Flower for Sale</h3>
+ <!--<ol>
+    <li> <a href="/products/details/12">Gerbera</a></li>
+    <li> <a href="/products/details/13">Rose</a></li>
+    <li> <a href="/products/details/14">Lotus</a></li>
+    <li> <a href="/products/details/15">Jasmine</a></li>
+   
+ </ol>
+ -->
+
+ @{
+    //List<Product> products=ViewData["products"] as List<Product>;
+    List<Product> products=ViewBag.catalog;
+
+    foreach( Product product in products){
+        <li> <a href="/products/details/@product.ProductId">@product.Title</a></li>
+    }
+
+   
+ }
+   

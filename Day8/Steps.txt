@@ -1,0 +1,14 @@
+1.Create a blank Solution.
+2.Add new Webapi project 
+3.Add new folders DAL, Models to webapi project.
+4.Add new class Employee in Models.
+5.Add new DBManager class in DAL.
+6.Add CRUD operation static functions to DBmanager class.
+7.Add basic implementation logic for DBManager class crud operations.
+8.Delete Weatherforecast Controller from Controllers folder.
+9.Add new Controller HRController in Controllers folder.
+10.Import Models , DAL inside HRController class  on topside.
+11.Add HTTP GET, POST, DELETE, and PUT action methods to HRController class.
+12.Invoke CRUD Operations logic from DBManager inside each method of HRController class.
+13.Test HR Rest API using Postman tool.
+14.Add CRMController as new API Controller similarly as we did using step 9 to 13.

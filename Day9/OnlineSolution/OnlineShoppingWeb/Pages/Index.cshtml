@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Console.WriteLine("Index View processing");
+    var instance=new { Title="Marigold", 
+                        Description="Festival Flower"};
+
+    Console.WriteLine(instance.Title + " "+ instance.Description);
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Transflower Store</h1>
+    <hr/>
+    <h3>Celebrate each moment using Transflowers</h3>
+    <img src="/images/gerbera.jpg" width="100" height="100"/>
+    <ol>
+        <li>Gerbera</li>
+        <li>Rose</li>
+        <li>Lotus</li>
+        <li>Jasmine</li>
+    </ol>
+</div>

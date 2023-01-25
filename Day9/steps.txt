@@ -1,0 +1,35 @@
+Todays Steps for Building MVC based OnlineShopping Web Applicatoin using Visual Code
+*********************************************************************************************
+
+1.Create a blank Solution with name OnlineShopping.
+2.Add new project as EStore using  MVC template  project
+3.Add EStore project into solutioon OnlineShopping. 
+4.Add Action Methods Aboutus, Contact to HomeController.cs 
+5.Add Views to Aboutsus, Contact action methods of HomeController.cs file
+6.Implement Presentation logic using HTML to Index.cshtml, Aboustus.cshtml, Aboutus.cshtml and Contact.cshtml.
+7.Add Images folder to wwwroot of EStore application project.
+8.Add essential iamges .jpg files to Images folder of project.
+9.Add basic implementation logic for DBManager class crud operations.
+10.Link image url to index.cshtml file
+11.Add new Controller AccountController in Controllers folder.
+12.Add Action method Login with HTTPGET and HTTPPost attribute.
+13.Add Login.cshtml file with newly created folder Account in Views folder.
+14.Design Login.cshtml file for inserting email address  and password with the help of HTML and bootstrap classes.
+15.Set Form method to POST and Action to /account/login.
+16.Add User credential validation logic inside AccountControllers HTTP POST Login method.
+17.On Successful login ,redirect User to Orders Index Action method using RedirectAction method of AccountController class.
+18.Add Action method Register  with HTTPGET and HTTPPost attribute to AccountController.
+19.Add Register.cshtml file to register new customer details on submissio in Views folder.
+20.Design Register.cshtml file for inserting Customer Details needed for OrderProcessing and future communication by EStore.
+   using FirstName, LastName, Email, ContactNumber and Location.
+21.Set Form method to POST and Action to /account/Register in Register.cshtml file.
+22.Add User Registeration logic to display Customer Inforamtion in Console Window of Server Application.
+Add implementation logic inside HTTP POST method Register of AccountController class.
+23.Add OrdersController to Controller folder to Manage OrderProcessing Logic.
+24.Implement Index Action Method to OrdersController.
+25.Add Index.cshtml razor file  inside Orders folder of view to show list of Orders belong to Customer.
+26.Add ProductsController to Controller folder to Manage Product Inventory of OnlineShopping Web Project.
+27.Implement Index Action Method to ProductsController View using Index.cshtml file.
+28.Add Product class with Id, Title, Description, UnitPrice, StockAvailable in Models folder of project.
+29.Create samples data of Products list in Index method of ProductsController .
+30.Show List of products to be sold maintained insdide Index of ProductsController to Index view of Products folder inside Views folder.

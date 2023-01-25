@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Register Page";
+}
+
+<div class="text-center">
+  <form method="post" action="/account/register">
+  <div class="mb-3 mt-3">
+    <label for="firstname" class="form-label">First Name:</label>
+    <input type="text" class="form-control" id="firstname" placeholder="Enter First Name" name="firstname">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="lastname" class="form-label">Last Name:</label>
+    <input type="text" class="form-control" id="last" placeholder="Enter Last Name" name="lastname">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="contactnumber" class="form-label">Contact Number:</label>
+    <input type="text" class="form-control" id="contactnumber" placeholder="Enter Contact Number" name="contactnumber">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="location" class="form-label">Location:</label>
+    <input type="text" class="form-control" id="location" placeholder="Enter Location" name="location">
+  </div>
+
+  <div class="mb-3 mt-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+  </div>
+   
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+</div>
