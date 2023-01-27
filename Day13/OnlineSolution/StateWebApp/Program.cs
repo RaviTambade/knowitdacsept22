@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-const string defaultCulture = "en-GB";
+/*const string defaultCulture = "en-GB";
 var supportedCultures = new[]
 {
     new CultureInfo(defaultCulture),
@@ -14,6 +14,7 @@ builder.Services.Configure<RequestLocalizationOptions>(options => {
     options.SupportedUICultures = supportedCultures;
 });
 
+*/
 
 builder.Services.AddControllersWithViews();
 //change 1:Add distributed Cache memeory where session data will be stored
@@ -46,7 +47,6 @@ app.UseAuthorization();
 //3.Change set up session middleware in HTTP pipeline
 
 app.UseSession();
-app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
