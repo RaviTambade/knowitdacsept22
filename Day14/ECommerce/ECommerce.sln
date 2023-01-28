@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService", "CatalogService\CatalogService.csproj", "{91FF989F-E0D0-4A2D-8AC8-9BA25D26B411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tflstore", "tflstore\tflstore.csproj", "{13483549-F87A-4DAC-978A-6DA0EF920D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMService", "CRMService\CRMService.csproj", "{9469E029-FD20-4785-A425-410F1F1F0283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MembershipService", "MembershipService\MembershipService.csproj", "{4A254A2C-CBE8-4DC6-BF15-916F960F43C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91FF989F-E0D0-4A2D-8AC8-9BA25D26B411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91FF989F-E0D0-4A2D-8AC8-9BA25D26B411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91FF989F-E0D0-4A2D-8AC8-9BA25D26B411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91FF989F-E0D0-4A2D-8AC8-9BA25D26B411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13483549-F87A-4DAC-978A-6DA0EF920D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13483549-F87A-4DAC-978A-6DA0EF920D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13483549-F87A-4DAC-978A-6DA0EF920D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13483549-F87A-4DAC-978A-6DA0EF920D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9469E029-FD20-4785-A425-410F1F1F0283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9469E029-FD20-4785-A425-410F1F1F0283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9469E029-FD20-4785-A425-410F1F1F0283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9469E029-FD20-4785-A425-410F1F1F0283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A254A2C-CBE8-4DC6-BF15-916F960F43C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A254A2C-CBE8-4DC6-BF15-916F960F43C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A254A2C-CBE8-4DC6-BF15-916F960F43C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A254A2C-CBE8-4DC6-BF15-916F960F43C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
