@@ -1,0 +1,19 @@
+Analysis Phase:
+
+Type of software:Online Software
+		 multi user software
+		 public Site, private Site
+		 internet site, intranet, extranet site
+		 Core Modules:
+			Product Catalog
+			Inventory
+			Shopping Cart
+			Membership & Roles Mgmt
+			OrderProcessing
+			Payment Processing
+			Shipment
+			Customer Relationship Management
+			BI
+
+
+			
