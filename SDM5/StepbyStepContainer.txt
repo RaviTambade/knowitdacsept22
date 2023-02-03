@@ -1,0 +1,38 @@
+Deploying Containerized Application to AWS Cloud:
+
+1.Create Node JS Application using VS code and Node JS on local machine.
+2.Write simple logic for REST API  to fetch List of Products and send as json data.
+3.add package.json to define express JS as dependency.
+4.Use Post man tool to test simple rest api created.
+5.Add Dockerfile to create containerized application  within node js application folder.
+
+6.Login to AWS console.
+7.Launch EC2 instance to run using Ubuntu Linx OS installable.
+8.Use t2.micro machine configuration for EC2 instance.
+9.Create ppk file to store Public key to access ec2 remotely using putty client.
+10.Launch EC2 instance.
+
+11.configure Security for luanched ec2 instance with firewall setting inbound rule.
+It should allow traffic from anwhere.
+12.Use putty to connect launced ec2 instance(public IP address) using .ppk file and and user id.
+13.Update your linx OS with latest packages.
+14.Install Docker in linux OS running in ec2 instance.
+
+
+
+15.Test Docker working perfectly using Docker pull hello-world comand from DockerHub.
+
+16.Ensure you get perfect message after running Docker run hello-world command.
+17.Pull ready made web server container image of nginx inside launched EC2 instance.
+18.Run web server (ngInx) using Docker Run Command.
+19.Test web site of nginx from local machine or mobile phone with IPaddress and Port number.
+20.Install git in EC2 instance , sothat you could download git repositories from github.
+21.Clone Containerized application Repositoy you uploaded before into EC2 instance.
+22.Build container images using Docker build command.
+23.List down all container images downloaded within EC2 instance.
+24.Run containerized applicaton as container instance  using Docker Run Command.
+25.Test containerized application getting accessed  perfectly  from remote machine or mobile phone.
+26.Remove containers using Docker ps command.
+27.Remove container images from machine using docker rmi command.
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
