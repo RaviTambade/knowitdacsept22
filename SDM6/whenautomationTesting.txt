@@ -1,0 +1,43 @@
+When to choose Automated Testing?
+
+There are a number of scenarios when software test engineers choose automation testing. 
+
+For instance, if they have a huge number of test cases that can be time consuming performed manually they would prefer test automation. 
+In case of testing high priority features where they do not want to risk human errors, testing the same features again and again, running multiple test cases simultaneously on different systems, 
+if the testing process is more complex and time consuming if done manually, the software test engineers choose test automation.
+
+
+Most of the times, especially in large projects when testing is required with every release, 
+certain types of testing including smoke test, sanity test, regression test, performance test, stress and load tests etc. are automated. 
+While using an efficient test automation tool, testers also test the above mentioned as well as cross browser testing along with same features with different data sets, performance test and many more
+
+
+How to choose the right tool for automation testing?
+
+Before choosing an automation tool, you need to identify your requirements and ensure they align with the tool you select. 
+The tool must be 
+satisfying to your testing requirements, 
+supporting the testing methods you would like to implement, 
+suitable to your project environment and 
+also technology and language that are used to build the application. 
+One should always ensure that the tool is not very complex to understand and use as it becomes time consuming to go through all the training to learn how to operate.
+
+Although it highly depends on the kind of application, 
+certain types of tests that can be automated are 
+smoke test
+web test automation
+mobile testing
+sanity test
+regression test
+cross browser test automation
+web services testing
+database testing
+big data testing
+various types of performance tests, 
+functional test, 
+integration test, 
+data driven test, 
+unit test. 
+
+On the other hand, types of tests which should not be automated are 
+exploratory test, UX test, UI test and API testing.

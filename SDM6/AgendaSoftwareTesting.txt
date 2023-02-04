@@ -1,0 +1,390 @@
+
+	System is operational
+	Zero Defect Product----
+
+	80%------20% Rule
+
+	Agenda:
+		Introduction to Software Testing
+		Why Software Testing important
+		Validatation and Verification
+		Quality Assurance Vs. Quality Control
+		Principles of Softwar Testing
+		V Model
+		Types of Testing
+		Mannual Testing
+		Automation Testing
+		Tools for Software Testing
+		Selenium Testing tool
+
+
+
+	Software Engg. phases:
+			
+			Analysis, Design ,Development, Testing, Deployment, maintainance
+
+
+		Analysis:
+		   Requirement---------Customers, their business people, actual end user, stake holder
+		   Architecting Solution--Architect, Domain Experts , QA Team (Quality Assurance team)
+		   Development Team------programmers, Developers, UI Designers
+		   Release Team---------Build managers, Release experts-----Building binaries for appln.
+
+		   Software Testing Team--Testers, QA Team, End Users, Customer
+
+		   Operations team------System Administrators, Monitoring Team using  checking log files,
+					Customer support Team (maintainance)
+		   DevOps team-----------CD/CI--------DevOps
+
+
+
+		 Software Testing Team:
+				Quality Assurance
+				Quality Control
+				Zero Defect Product
+				Test Strategy
+				Test plan
+				Test Cases
+				QA Process ..........
+
+
+		Software Testing:
+				Finding bugs
+				Finding loop holes in a software
+				Defining test plan
+				Writing test cases
+				Executing test cases
+				Collecting Test results
+				Report test results to Developers
+				Escalate vulenrabilities in build of software		
+
+				Always check for expected output from the system
+
+
+
+Software testing is a method
+	Wheather your software meets the SRS guidlines ( Product, service, Application)
+	matches expected requirements
+	it ensures software is bug free (Zero defect Product)
+
+purpose of ST>:
+	 identify errors, gaps which missing in software.
+
+Software Testing is a method to check whether the actual software product matches expected requirements and to ensure that software product is Defect free. It involves execution of software/system components using manual or automated tools to evaluate one or more properties of interest. The purpose of software testing is to identify errors, gaps or missing requirements in contrast to actual requirements.
+
+Advantages of Software Testing:
+	Cost Effective
+	Product Quality:
+	Customer statisfaction
+	Secure:
+
+
+Types of Software Testing:
+	Functional Testing
+	Unit Testing
+	Integration Testing
+
+
+
+
+Non Functional Testing:
+   Performance
+   Endurance
+   Load Testing
+   Scalability
+   Usability
+
+Regression Testing:
+					
+
+What are principles of Software Testing:
+
+7 principles of Software Testing:
+
+
+1.Exhastive testing is not possible.
+ Exhaustive testing is not possible. 
+ Instead, we need the optimal amount of testing based on the risk assessment of the application.
+		 
+2.Defect Clustring
+Defect Clustering which states that a small number of modules contain most of the defects detected. 
+This is the application of the Pareto Principle to software testing:
+ approximately 80% of the problems are found in 20% of the modules.
+
+By experience, you can identify such risky modules. But this approach has its own problems
+
+If the same tests are repeated over and over again, eventually the same test cases will no longer find new bugs.
+
+3.Testing always shows a presence of Defects.
+Hence, testing principle states that – Testing talks about the presence of defects and don’t talk about the absence of defects. i.e. Software Testing reduces the probability of undiscovered defects remaining in the software but even if no defects are found, 
+it is not a proof of correctness.
+But what if, you work extra hard, taking all precautions & make your software product 99% bug-free. 
+And the software does not meet the needs & requirements of the clients.
+
+
+4.Pesticide paradox
+Repetitive use of the same pesticide mix to eradicate insects during farming will over time lead to the insects developing resistance to the pesticide Thereby ineffective of pesticides on insects. 
+The same applies to software testing. 
+If the same set of repetitive tests are conducted, the method will be useless for discovering new defects.
+To overcome this, the test cases need to be regularly reviewed & revised, adding new & different test cases to help find more defects.
+
+5.Absence of Error-----(Defective product)-----(Zero defect product)
+It is possible that software which is 99% bug-free is still unusable. 
+This can be the case if the system is tested thoroughly for the wrong requirement.
+Software testing is not mere finding defects, but also to check that software addresses the business needs. 
+The absence of Error is a Fallacy 
+i.e. Finding and fixing defects does not help if the system build is unusable and does not fulfill the user’s needs & requirements.
+
+
+6.Early Testing
+Early Testing – Testing should start as early as possible in the Software Development Life Cycle.
+So that any defects in the requirements or design phase are captured in early stages. 
+It is much cheaper to fix a Defect in the early stages of testing.
+But how early one should start testing? 
+It is recommended that you start finding the bug the moment the requirements are defined. 
+
+
+7.Testing is a context dependent  (Abstraction)
+
+Testing is context dependent which basically means that the way you test an e-commerce site will be different from the way you test a commercial off the shelf application. 
+All the developed software’s are not identical. 
+You might use a different approach, methodologies, techniques, and types of testing depending upon the application type.
+
+For instance testing, any POS system at a retail store will be different than testing an ATM machine.
+
+
+
+
+
+V model Software Testing:
+
+Verification in Software Testing is a process of checking documents, design, code, and program in order to check if the software has been built according to the requirements or not. 
+The main goal of verification process is to ensure quality of software application, design, architecture etc. 
+The verification process involves activities like reviews, walk-throughs and inspection.
+
+Validation in Software Engineering is a dynamic mechanism of testing and validating if the software product actually meets the exact needs of the customer or not. 
+The process helps to ensure that the software fulfills the desired use in an appropriate environment. 
+The validation process involves activities like unit testing, integration testing, system testing and user acceptance testing.
+
+
+KEY DIFFERENCE
+
+Verification process includes checking of documents, design, code and program whereas 
+Validation process includes testing and validation of the actual product.
+
+Verification does not involve code execution while Validation involves code execution.
+Verification uses methods like reviews, walkthroughs, inspections and desk-checking whereas 
+Validation uses methods like black box testing, white box testing and non-functional testing.
+Verification checks whether the software confirms a specification whereas Validation checks whether the software meets the requirements and expectations.
+
+Verification finds the bugs early in the development cycle whereas Validation finds the bugs that verification can not catch.
+Comparing validation and verification in software testing, 
+Verification process targets on software architecture, design, database, etc.
+while Validation process targets the actual software product.
+Verification is done by the QA team while Validation is done by the involvement of testing team with QA team.
+Comparing Verification vs Validation testing, 
+Verification process comes before validation whereas Validation process comes after verification.
+
+
+______________________________________________________________________________________________________________________________________
+
+TDD: Test Driven Development Approach
+	Define Test First......
+
+How do I Write a Test ?
+
+		1.Define a scenario
+		2.Define expected output
+		3.Define required input to the System
+
+		  Authentication
+				with proper crednetials  user redirected to profile pages
+				output success: with proper crendentials
+				output fail:   with improper credentails
+
+		  Product Catalog Display
+		  Prouduct Details Display
+		  Select product to add to shopping cart
+		  Remove item from ShoppingCart
+		  Show all Items available in ShoppingCart
+
+
+
+Define Test Plan: By QA Team:  (Rule book) for Software Testing Team
+
+	:
+Test Strategy
+Objective:Objectives captured from usecases
+	Estimations and Delivery:
+				Pre-conditions
+				Timeline for testing:
+	Resoruces required from Testing:
+		Testers,----------------------------mannual Testing
+		Testing Tools-----------------------Automation Testing Tool
+		Test cases-------------------------plain documents,
+   spreasheet,etc.
+										   
+
+Test Plan
+
+A Test Plan is a detailed document that describes the test strategy, objectives, schedule, estimation, deliverables, and resources required to perform testing for a software product. 
+Test Plan helps us determine the effort needed to validate the quality of the application under test. 
+The test plan serves as a blueprint to conduct software testing activities as a defined process,
+which is minutely monitored and controlled by the test manager.
+
+What is the Importance of Test Plan?
+
+Follow the seven steps below to create a test plan as per IEEE 829
+
+1.Analyze the product
+2.Design the Test Strategy
+3.Define the Test Objectives
+4.Define Test Criteria
+5.Resource Planning
+6.Plan Test Environment
+7.Schedule & Estimation
+8.Determine Test Deliverables
+
+
+Step 1) Analyze the product
+	You should research clients and the end users to know their needs and expectations from the application
+		Who will use the website?
+		What is it used for?
+		How will it work?
+		What are software/ hardware the product uses?
+
+Step 2) Develop Test Strategy
+	A Test Strategy document, is a high-level document, which is usually developed by Test Manager. 
+	This document defines:
+		The project’s testing objectives and the means to achieve them
+		Determines testing effort and costs
+
+Step 3) Define Test Objective
+	To define the test objectives, you should do 2 following steps
+		1.List all the software features (functionality, performance, GUI…) which may need to test.
+		2.Define the target or the goal of  the test based on  above features
+
+What is test plan template?
+
+TEST PLAN TEMPLATE is a detailed document that describes the test strategy, objectives, schedule, estimation and deliverables, and resources required for testing. 
+Test Plan helps us determine the effort needed to validate the quality of the application under test.
+The test plan serves as a blueprint to conduct software testing activities as a defined process which is minutely monitored and controlled by the test manager.
+
+Creating a Test Plan is mandatory to ensure success of your Software testing project.
+
+Help people outside the test team such as developers, business managers, customers understand the details of testing.
+Test Plan guides our thinking. It is like a rule book, which needs to be followed.
+Important aspects like test estimation, test scope, Test Strategy are documented in Test Plan, so it can be reviewed by Management Team and re-used for other projects.
+
+____________________________________________________________________________________________________________________________________
+
+What is a Test Case?
+
+A TEST CASE is a set of actions executed to verify a particular feature or functionality of your software application. 
+A Test Case contains 
+	test steps, test data, precondition, postcondition developed for specific test scenario to verify any requirement. 
+The test case includes 
+	specific variables or conditions, using 
+	which a testing engineer can compare expected and
+	actual results to determine whether a software product is functioning as per the requirements of the customer.
+
+Test case:
+	Test Case 1: Check the results on entering valid user Id and Password
+	Test Case 2: Check the results on entering invalid user id and password
+	Test case 3:Check the response when a user IS is empty and login buttong in presess..
+
+..................................................................................................
+....................................................................................................
+
+you would need data
+
+Test Case : 1
+
+Description:  Check the results on entering valid user Id and Password
+Test Steps:   1.Enter Email Address
+	      2.Enter password
+	      3.Click Sign In
+
+Test Data:
+	    Email: ravi.tambade@transflower.in
+	    password: tfl@7867
+
+Expected Result:
+	   Login should be successfull
+
+Actual Result:
+	    Login was successful
+
+Pass/Fail:
+	   Pass
+
+_________________________________________________________________________________________________________________________________
+
+Test Case : 2
+Description:  Check the results on entering invalid user id and password
+Test Steps:   1.Enter  Invalid Email Address
+	      2.Enter  Invalid password
+	      3.Click Sign In
+
+Test Data:
+	    Email: ravi.jadhav@transflower.in
+	    password: t56564
+
+Expected Result:
+	   Login should be falied
+
+Actual Result:
+	    Login should be falied
+
+Pass/Fail:
+	   passed
+
+
+______________________________________________________________________________________________________________________________________
+
+While drafting a test case to include the following information:
+
+1.The description of what requirement is being tested
+2.The explanation of how the system will be tested
+3.The test setup like
+	a version of an application under test, 
+	software, 
+	data files, 
+	operating system, hardware, 
+	security access, physical or logical date, 
+	time of day, 
+	prerequisites such as other tests and 
+	any other setup information pertinent to the requirements being tested
+4.Inputs and outputs or actions and expected results
+5.Any proofs or attachments
+6.Use active case language
+7.Test Case should not be more than 15 steps
+8.An automated test script is commented with inputs, purpose and expected results
+9.The setup offers an alternative to pre-requisite tests
+10.With other tests, it should be an incorrect business scenario order
+
+________________
+
+IDE  tool Support for Software Testing:
+
+	Unit Testing:
+	1.Create  a project to Test
+	2.Create a unit Test project.
+	3.Create Test Class.
+	4.Create Test Method--------implementation for Test Case
+	5.Build and Run Test.
+	6.Fix your code and rerun  the test.
+	7.Keep your fixing your code by performing repeated Test.
+
+______________________________________________________________________________________________________________________________________
+
+
+Automation Testing:
+	Automation Testing Frameowrk
+	Automation Testing Tool---------Selenium
+	Automation Testing is done for Web Testing
+
+______________________________________________________________________________________________________________________________________
+
+Let us use Visual Studio .NET:
+	

@@ -1,0 +1,54 @@
+What is Jenkins? The CI server explained
+Jenkins offers a simple way to set up a continuous integration and continuous delivery environment for almost any combination of languages and source code repositories
+
+
+Jenkins offers a simple way to set up a continuous integration or continuous delivery (CI/CD) environment for almost any combination of languages and source code repositories using pipelines, as well as automating other routine development tasks. While Jenkins doesn’t eliminate the need to create scripts for individual steps, it does give you a faster and more robust way to integrate your entire chain of build, test, and deployment tools than you can easily build yourself.
+
+“Don’t break the nightly build!” is a cardinal rule in software development shops that post a freshly built daily product version every morning for their testers. Before Jenkins, the best a developer could do to avoid breaking the nightly build was to build and test carefully and successfully on a local machine before committing the code. But that meant testing one’s changes in isolation, without everyone else’s daily commits. There was no firm guarantee that the nightly build would survive one’s commit.
+
+Hudson and Jenkins
+
+In 2004, Kohsuke Kawaguchi was a Java developer at Sun. Kawaguchi became tired of breaking builds in his development work and wanted to find a way to know, before committing code to the repository, whether the code was going to work. So Kawaguchi built an automation server in and for Java to make that possible, called Hudson. Hudson became popular at Sun, and spread to other companies as open source.
+
+Fast-forward to 2011, and a dispute between Oracle (which had acquired Sun) and the independent Hudson open source community led to a fork with a name change, Jenkins. In 2014 Kawaguchi became CTO of CloudBees, which offers Jenkins-based continuous delivery products.
+
+Both forks continued to exist, although Jenkins was much more active. Today, the Jenkins project is still active. The Hudson website was closed down on Jan 31, 2020.
+
+In March 2019 the Linux Foundation, along with CloudBees, Google, and a number of other companies, launched a new open source software foundation called the Continuous Delivery Foundation (CDF). Jenkins contributors decided that their project should join this new foundation. Kawaguchi wrote at the time that nothing of significance would change for users.
+
+n January 2020 Kawaguchi announced he was moving to his new startup, Launchable. He also said that he would be officially stepping back from Jenkins, although staying on the Technical Oversight Committee of the Continuous Delivery Foundation, and switching his role at CloudBees to an advisor.
+
+Jenkins automation
+Today Jenkins is the leading open-source automation server with some 1,600 plug-ins to support the automation of all kinds of development tasks. The problem Kawaguchi was originally trying to solve, continuous integration and continuous delivery of Java code (i.e. building projects, running tests, doing static code analysis, and deploying) is only one of many processes that people automate with Jenkins. Those 1,600 plug-ins span five areas: platforms, UI, administration, source code management, and, most frequently, build management.
+
+How Jenkins works
+Jenkins is distributed as a WAR archive and as installer packages for the major operating systems, as a Homebrew package, as a Docker image, and as source code. The source code is mostly Java, with a few Groovy, Ruby, and Antlr files.
+
+You can run the Jenkins WAR standalone or as a servlet in a Java application server such as Tomcat. In either case, it produces a web user interface and accepts calls to its REST API.
+
+When you run Jenkins for the first time, it creates an administrative user with a long random password, which you can paste into its initial webpage to unlock the installation.
+
+
+Jenkins plug-ins
+Once installed, Jenkins allows you to either accept the default plugin list or choose your own plugins.
+
+
+
+Why use Jenkins?
+The Jenkins Pipeline plug-in we’ve been using supports a general continuous integration/continuous delivery (CICD) use case, which is probably the most common use for Jenkins. There are specialized considerations for some other use cases.
+
+Java projects were the original raison d’être for Jenkins. We’ve already seen that Jenkins supports building with Maven; it also works with Ant, Gradle, JUnit, Nexus, and Artifactory.
+
+Android runs a kind of Java, but introduces the issue of how to test on the wide range of Android devices. The Android emulator plug-in allows you to build and test on as many emulated devices as you care to define. The Google Play Publisher plug-in lets you send builds to an alpha channel in Google Play for release or further testing on actual devices.
+
+I’ve shown examples where we specified a Docker container as the agent for a pipeline and where we ran Jenkins and Blue Ocean in a Docker container. Docker containers are very useful in a Jenkins environment for improving speed, scalability, and consistency.
+
+There are two major use cases for Jenkins and GitHub. One is build integration, which can include a service hook to trigger Jenkins on every commit to your GitHub repository. The second is the use of GitHub authentication to control access to Jenkins via OAuth.
+
+Jenkins supports many other languages besides Java. For C/C++, there are plug-ins to capture errors and warnings from the console, generate build scripts with CMake, run unit tests, and perform static code analysis. Jenkins has a number of integrations with PHP tools.
+
+While Python code doesn’t need to be built (unless you’re using Cython, for instance, or creating a Python wheel for installation) it’s useful that Jenkins integrates with Python testing and reporting tools, such as Nose2 and Pytest, and code quality tools such as Pylint. Similarly, Jenkins integrates with Ruby tools such as Rake, Cucumber, Brakeman, and CI::Reporter.
+
+Jenkins for CI/CD
+On the whole, Jenkins offers a simple way to set up a CI/CD environment for pretty much any combination of languages and source code repositories using pipelines, as well as automating a number of other routine development tasks. While Jenkins doesn’t eliminate the need to create scripts for individual steps, it does give you a quicker and more robust way to integrate your entire chain of build, test, and deployment tools than you could easily build yourself.
+
